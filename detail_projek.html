@@ -1,0 +1,383 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <meta name="description" content="Situs donasi dan menggalang dana (fundraising) untuk inisiatif, campaign dan program sosial. Mari bergotong royong membangun Indonesia!" />
+   <title>Kitabisa.com - Indonesia&#039;s Fundraising Platform</title>
+   <link rel="stylesheet" href="css/main.css">
+   <script src="js/modernizr.min.js"></script>      
+   </head>
+   <body id="site-body">
+      <header class="site-header site-header--alt">
+         <div class="container">
+            <a id="site-logo__header-unactive" class="site-logo" href="index.html"><img src="https://assets.kitabisa.com/images/logo__ktbs.svg" alt="" /></a><a id="site-logo__header-active" class="site-logo hidden" href="index.html"><img src="https://assets.kitabisa.com/images/logo__ktbs__blue.svg" alt="" /></a> 
+            <div class="header-option">
+               <div class="header-search-input">
+               </div>
+               <div class="header-search-overlay sr-only"></div>
+               <div class="header-side-nav">
+                  <div class="header-actions">
+                     <div class="header-actions__items">
+                        <div class="header-actions__item">
+                           <a class="btn btn--mtrl header-actions__btn" href="galang_donasi.html">Galang Donasi</a> 
+                        </div>
+                     </div>
+                     <div class="header-actions__items">
+                        <div class="header-actions__item">
+                           <a class="btn btn--mtrl header-actions__btn" href="lihat_donasi.html">Lihat Donasi</a> 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-actions__items header-actions__dropdown">
+               <div class="header-actions__item">
+                  <a href="#" class='text-24' id='navbar-toggle'>
+                  <span></span>
+                  </a>
+                  <div class="header-actions__dropdown-list menu-after-login hidden">
+                     <figure class="user-profile">
+                        <a class="user-profile__img" href="/dashboard/setting/personal-information"><img class="user-profile__img" src="https://kitabisa-userupload-01.s3-ap-southeast-1.amazonaws.com/_production/user/329085/23_329085_1499332812_65403_a.jpg" alt="user-picture" /></a> 
+                        <figcaption class='user-profile__data'>
+                           <a class="text-black70" href="/dashboard/setting/personal-information"><strong>Alif Arya Wiguna
+                           </strong><br /><small><span class="__cf_email__">lebahganteng33@gmail.com</span></small></a> 
+                        </figcaption>
+                     </figure>
+                     <div class="menu-after-login__dashboard">
+                        <a class="btn btn--block btn--pink btn--mtrl" href="dashboard.html"><strong>Dashboard</strong></a> 
+                     </div>
+                     <div class="menu-after-login__journey">                       
+                        <a class="menu-after-login__logout btn btn--blue" href="home.html"><span class="fa fa-sign-out"></span> Keluar</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- isi konten -->  
+      <div class="campaign-option">
+         <div class="container">
+            <div class="grid">
+               <div class="col--m12">
+                  <ul class="list-nostyle list-inline">
+                     <li>
+                        <a class="btn btn--medium btn--verified" href="edit_projek.html">Edit Projek</a> 
+                     </li>
+                     <li>
+                        <a href="hapus_projek.html">Hapus Project</a> 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <main class="site-main">
+         <div class="modal modal--time hidden">
+            <div class="modal__bg"></div>
+            <div class="modal__body">
+               <button class="modal__close btn btn--transparent pull-right">
+               <span class="material-icons text-black40">&#xE14C;</span>
+               </button>
+               <div class="modal__content">
+                  <div class="container container--medium align-center">
+                     <h2 class="text-slim large-margin-bottom">
+                        Mau Campaign kamu sukses
+                     </h2>
+                     <div class="col">
+                        <div class="col--m6">
+                           <div class="col--s3">
+                              <img class="small-distract-margin-left" src="https://assets.kitabisa.com/images/icon-1.svg" />
+                           </div>
+                           <div class="col--s9 align-left">
+                              <p class="text-12 align-left">
+                                 Faktanya, 80% donatur enggan donasi di campaign yang masih nol
+                              </p>
+                              <h3 class="text-14 align-left large-margin-bottom">
+                                 Jadilah donatur pertama di campaign kamu!
+                              </h3>
+                              <a class="btn btn--pink text-14 text-slim" href="/sayamaubikin/contribute">Donasi Sekarang</a> 
+                           </div>
+                        </div>
+                        <div class="col--m6">
+                           <div class="col--s3">
+                              <img class="small-distract-margin-left" src="https://assets.kitabisa.com/images/icon-2.svg" />
+                           </div>
+                           <div class="col--s9 align-left">
+                              <p class="text-12 align-left">
+                                 70% donasi datang dari lingkaran terdekat
+                              </p>
+                              <h3 class="text-14 align-left large-margin-bottom">
+                                 Sebarkan campaign ini ke keluarga/teman kamu!
+                              </h3>
+                              <button class="btn btn--fb text-14 text-slim">
+                              <span class="fa fa-facebook text-15"></span>
+                              Share Ke Facebook
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                     <br>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="fundraiserRegister" class="modal--mtrl modal-toggled__content hidden">
+            <div class="modal__bg"></div>
+            <div class="modal__body modal__body--small">
+               <span class="modal__close modal__close--small pull-right">
+               <span class="material-icons">close</span>
+               </span>
+               <div class="modal__content base-margin">
+                  <h3 class="align-center"><strong>Galang dana sebagai Fundraiser</strong></h3>
+                  <hr>
+                  <p>
+                     Isi form dibawah untuk menjadi Fundraiser campaign <em>saya mau bikin campaig</em>"<br />Setiap donasi yang kamu kumpulkan akan disalurkan ke Alif Arya Wiguna"<br /> 
+                  </p>
+                  <form id="form-donate-validation" action="https://kitabisa.com/sayamaubikin/create-fundraiser" class="form" method="post">
+                     <div class="form__row">
+                        <label for="" class="form-label">
+                        <strong>Target donasi</strong>
+                        <br />
+                        Min. Rp 1.000.000
+                        </label>
+                        <div class="pos-r">
+                           <span class="cust-pholder__text pos-a pos-a--l0-t0">
+                           <strong>Rp</strong>
+                           </span>
+                           <input type="text" id="donasi-validation" class="form-input form-input--block form-input--cust-pholder-money-input" name="Projects[funding_target]">
+                        </div>
+                     </div>
+                     <div class="form__row">
+                        <label for="" class="form-label">
+                        <strong>Judul Campaign</strong>
+                        </label>
+                        <input type="text" class="form-input form-input--block" name="Projects[title]">
+                     </div>
+                     <div class="form__row">
+                        <label for="" class="form-label">
+                        <strong>Link campaign</strong>
+                        </label>
+                        <div class="pos-r">
+                           <span class="cust-pholder__text pos-a pos-a--l0-t0">
+                           <strong>Kitabisa.com/</strong>
+                           </span>
+                           <input type="text" class="form-input form-input--block form-input--cust-pholder-campaign-title" name="Projects[short_url]">
+                        </div>
+                     </div>
+                     <div class="form__row large-margin-top">
+                        <button class="btn btn--blue btn--mtrl btn--block btn--large" type="submit">
+                        Jadi Fundraiser
+                        </button>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+         <div class="project-hilite">
+            <div class="container">
+               <div class="project-header--top project-header--balance">
+                  <div class="project-header">
+                     <h1 class="page-title project-title project-title--full">
+                        saya mau bikin campaig 
+                     </h1>
+                  </div>
+               </div>
+               <div class="cols">
+                  <div class="main-col">
+                     <div class="project-cover  box--disclaimer">
+                        <span class="overlay">
+                        </span>
+                        <div class="project-cover__alert">
+                           <span class="icon-info-outline"></span>
+                           <p class="text-16 box--disclaimer__text">
+                              Tim Kitabisa sedang mereview campaign ini. Kamu tetap bisa mengajak keluarga dan teman berdonasi dengan menyebarkan link campaign.
+                           </p>
+                        </div>
+                        <img class="blur" src="https://kitabisa-userupload-01.s3-ap-southeast-1.amazonaws.com/_production/campaign/48641/31_48641_1515503845_116314_f.png" alt="saya mau bikin campaig" /> 
+                     </div>
+                     <div class="project-collaborator">
+                        <div class="col">
+                           <div class="col--m6">
+                              <div class="project-owner project-owner--ngo">
+                                 <a href="/orang-baik/329085">
+                                    <div class="item-img">
+                                       <img src="https://kitabisa-userupload-01.s3-ap-southeast-1.amazonaws.com/_production/user/329085/23_329085_1499332812_65403_a.jpg" alt="" /> 
+                                    </div>
+                                 </a>
+                                 <div class="campaigner-body">
+                                    <div class="item-text">
+                                       Campaigner
+                                       <span class="text-blue campaigner-socmed">
+                                          <strong class="component-toggle--single">
+                                          (Social Media)
+                                          </strong>
+                                          <ul class="list-nostyle campaigner-socmed__item component-content--single hidden">
+                                             <li class="link--relative">
+                                                <img src="https://assets.kitabisa.com/images/plain-icon--fb.png" alt="">
+                                                <a href="https://facebook.com/1878895869100294" class="link--abs" target="_blank"></a>
+                                             </li>
+                                          </ul>
+                                       </span>
+                                       <br>
+                                       <span>
+                                       <a href="/orang-baik/329085" class="campaigner-name">
+                                       <strong class="small-margin-right">
+                                       Alif Arya Wiguna </strong>
+                                       </a>
+                                       <span class="campaigner-tags">
+                                       <span class="campaigner-tags__verified campaigner-tags__verified--green link--relative">
+                                       <span class="campaigner-tooltip">
+                                       Campaigner Telah Terverifikasi
+                                       </span>
+                                       <a class="link--abs" href="/faq?keyword=badge+hijau"></a>
+                                       </span>
+                                       </span>
+                                       </span>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="side-col">
+                     <div class="project-status">
+                        <div class="project-collected">
+                           <h1 class="project-collected__amount">
+                              Rp 0 
+                           </h1>
+                           terkumpul dari target Rp 2.000.000 
+                        </div>
+                        <div class="project-bar">
+                           <span class="project-bar-progress" style="width: 0%"></span>
+                        </div>
+                        <div class="project-target">
+                           <strong>0% </strong>terkumpul
+                           <span class="project-deadline">
+                           <span class="icon-schedule"></span>
+                           <strong>9</strong> hari lagi
+                           </span>
+                        </div>
+                     </div>
+                     <div class="contribution">
+                        <a class="btn btn--block btn--large btn--border btn--round btn-contribute btn--pink" href="/sayamaubikin/contribute">DONASI SEKARANG</a> 
+                        <div class="col base-margin-tb ">
+                        </div>
+                     </div>
+                     <div class="br-3 base-padding bg-white base-margin-top">
+                        <p class='text-10 no-margin-top'>
+                           <strong>Bantu campaign ini dengan menjadi Donatur</strong><br />
+                           Setiap donasi yang kamu kumpulkan akan disalurkan ke <strong>saya mau bikin campaig</strong> 
+                        </p>
+                        <a class="btn btn--blue btn--mtrl btn--block btn--large text-semibold modal-toggle" data-target="#fundraiserRegister"> Jadi Donatur </a> 
+                     </div>
+                     <br>
+                     <div class="project-report">
+                        <strong>Campaign ini mencurigakan?</strong>
+                        <a href="lapor_project.html">Laporkan</a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="tab-nav-wrapper" id="tabNav">
+            <div class="container">
+               <ul class="project-detail-tab-nav">
+                  <li class="tab__item is-active">
+                     <a href="#story" data-nav-trigger="#story" data-scrollto="#story" title="Story">
+                     Detail
+                     </a>
+                  </li>
+                  <li class="tab__item">
+                     <a href="#funders" data-nav-trigger="#funders" data-scrollto="#funders" title="Funders" onclick="ga('send', 'event', 'tab-fundraiser', 'click', 'tab-fundraiser');">
+                     Donatur
+                     <span class="number">0</span> </a>
+                  </li>
+               </ul>
+               <a class="btn btn--block btn--large btn--border btn--round btn-contribute btn--pink" href="/sayamaubikin/contribute">DONASI SEKARANG</a> 
+            </div>
+         </div>
+         <div class="project-detail tab-detail" id="detail_story">
+            <div class="container">
+               <div id="story" class="cols cols-project tab__panel is-active">
+                  <div class="main-col cols-project--main">
+                     <article class="project-detail__article">
+                        <p>Beberapa bulan yang lalu, produsen smartphone asal Tiongkok, Vivo telah mengumumkan bahwa mereka tengah mengembangkan teknologi in-display fingerprint yang akan segera dihadirkan pada smartphone selanjutnya. Kini perusahaan telah memposting teaser gambar baru yang mengungkapkan bahwa smartphone yang akan mengusung teknologi tersebut segera diluncurkan. 
+                           Selengkapnya: https://www.beritateknologi.com/vivo-dikabarkan-bakal-umumkan-smartphone-dengan-in-display-fingerprint-dalam-waktu-dekat/
+                        </p>
+                        <div class="box box--white project-detail-article__disclaimer large-margin-bottom base-margin-top">
+                           <p>
+                              Disclaimer: Informasi dan opini yang tertulis di halaman ini adalah milik campaigner dan tidak mewakili Kitabisa
+                           </p>
+                        </div>
+                        <a class="btn btn--block btn--large btn--border btn--round btn-contribute btn--pink" href="/sayamaubikin/contribute">DONASI SEKARANG</a> 
+                     </article>
+                  </div>
+               </div>
+               <div id="funders" class="cols cols-project tab__panel">
+                  <div class="main-col cols-project--main">
+                     <div id="funders--empty" class="align-center container container--small">
+                        <img src="https://assets.kitabisa.com/images/funders--empty.png" alt="Empty Fundraiser">
+                        <h3>
+                           <strong>Galang dana sebagai Fundraiser</strong>
+                        </h3>
+                        <p class="large-margin-tb">
+                           Isi form dibawah untuk menjadi Fundraiser campaign <em>saya mau bikin campaig</em>"<br />Setiap donasi yang kamu kumpulkan akan disalurkan ke Alif Arya Wiguna"<br /> 
+                        </p>
+                        <button class="btn btn--blue btn--mtrl btn--large modal-toggle" data-target="#fundraiserRegister">
+                        Jadi Donatur
+                        </button>
+                     </div>
+                  </div>
+               </div>
+               <div class="campaigner-banner">
+                  <div class="col">
+                     <div class="col--m8">
+                        <p> Mau buat halaman untuk galang dana online seperti ini?</p>
+                     </div>
+                     <div class="col--m4">
+                        <a class="btn btn--large btn--block btn--blue" onclick="ga('send', 'event', 'campaigner-banner', 'click', 'campaigner-banner');" href="/buat-campaign">Buat sekarang gratis!</a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+         </div>
+      </main>
+      <!-- end isi konten -->
+      <footer role="contentinfo" class="site-footer no-padding--important">
+         <div class="footer-social-wrapper">
+            <div class="container pos-r">
+               <img class="footer-flat__logo" src="https://assets.kitabisa.com/images/site-logo.png">
+               <div class="pos-a pos-a--r0-t50">
+                  <ul class="footer-social large-margin-right">
+                     <span class="centered-inline">Temukan kami di: </span>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__fb-circle.png" alt=""></a>
+                     </li>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__ig-circle.png" alt=""></a> 
+                     </li>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__twitter-circle.png" alt=""></a> 
+                     </li>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__yt-circle.png" alt=""></a> 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script>window.myPrefix = '';</script>
+      <script>
+         var path = {
+                 css:myPrefix+"https://assets.kitabisa.com/css/",
+                 js:myPrefix+"https://assets.kitabisa.com/js/vendor/"
+             };
+      </script>
+      <script src="js/main.min.js"></script>
+   </body>
+</html>
+

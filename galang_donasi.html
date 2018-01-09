@@ -1,0 +1,267 @@
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <meta name="description" content="Situs donasi dan menggalang dana (fundraising) untuk inisiatif, campaign dan program sosial. Mari bergotong royong membangun Indonesia!" />
+   <title>Kitabisa.com - Indonesia&#039;s Fundraising Platform</title>
+   <link rel="stylesheet" href="css/main.css">
+   <script src="js/modernizr.min.js"></script>      
+   </head>
+   <body id="site-body">
+      <header class="site-header site-header--alt">
+         <div class="container">
+            <a id="site-logo__header-unactive" class="site-logo" href="index.html"><img src="https://assets.kitabisa.com/images/logo__ktbs.svg" alt="" /></a><a id="site-logo__header-active" class="site-logo hidden" href="index.html"><img src="https://assets.kitabisa.com/images/logo__ktbs__blue.svg" alt="" /></a> 
+            <div class="header-option">
+               <div class="header-search-input">
+               </div>
+               <div class="header-search-overlay sr-only"></div>
+               <div class="header-side-nav">
+                  <div class="header-actions">
+                     <div class="header-actions__items">
+                        <div class="header-actions__item">
+                           <a class="btn btn--mtrl header-actions__btn" href="galang_donasi.html">Galang Donasi</a> 
+                        </div>
+                     </div>
+                     <div class="header-actions__items">
+                        <div class="header-actions__item">
+                           <a class="btn btn--mtrl header-actions__btn" href="lihat_donasi.html">Lihat Donasi</a> 
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="header-actions__items header-actions__dropdown">
+               <div class="header-actions__item">
+                  <a href="#" class='text-24' id='navbar-toggle'>
+                  <span></span>
+                  </a>
+                  <div class="header-actions__dropdown-list menu-after-login hidden">
+                     <figure class="user-profile">
+                        <a class="user-profile__img" href="/dashboard/setting/personal-information"><img class="user-profile__img" src="https://kitabisa-userupload-01.s3-ap-southeast-1.amazonaws.com/_production/user/329085/23_329085_1499332812_65403_a.jpg" alt="user-picture" /></a> 
+                        <figcaption class='user-profile__data'>
+                           <a class="text-black70" href="/dashboard/setting/personal-information"><strong>Alif Arya Wiguna
+                           </strong><br /><small><span class="__cf_email__">lebahganteng33@gmail.com</span></small></a> 
+                        </figcaption>
+                     </figure>
+                     <div class="menu-after-login__dashboard">
+                        <a class="btn btn--block btn--pink btn--mtrl" href="dashboard.html"><strong>Dashboard</strong></a> 
+                     </div>
+                     <div class="menu-after-login__journey">                       
+                        <a class="menu-after-login__logout btn btn--blue" href="home.html"><span class="fa fa-sign-out"></span> Keluar</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- isi konten -->
+      <main id="register-campaign" class="site-main">
+         <div class="step-reg-campaign">
+         </div>
+         <div class="container reg-campaign-box">
+            <form class="form form--big auto-num" id="projects-form" action="tahap_donasi.html" method="post">
+               <br />
+               <fieldset>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Judul Campaign
+                     </label>
+                     <div class="input-col col--m8">
+                        <div class="form-info">
+                           <span class="form-info--suggest">
+                           Tulis judul singkat yang menjelaskan tujuan kamu menggalang dana
+                           </span>
+                           <span class="form-info--counter" style="float:right;">
+                           <span class="remain-char">0</span>/<span class="max-char">50</span>
+                           </span>
+                        </div>
+                        <input maxlength="50" class="form-input form-input--block input-max-char" data-char="50" name="Projects[title]" id="Projects_title" type="text" />
+                     </div>
+                  </div>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Target Donasi
+                     </label>
+                     <div class="input-col col--m8">
+                        <div class="form-info">
+                           <span class="form-info--suggest">
+                           Berapa target donasi yang kamu butuhkan? (min. Rp.1.000.000)
+                           </span>
+                        </div>
+                        <label class="donasi__label">Rp</label>
+                        <input class="form-input form-input--block form-input--75 auto-num-input donasi__label__input" placeholder="" data-min="1000000" data-max="2500000000000" data-error-min="Nominal target donasi terlalu kecil" data-error-max="Nominal target donasi terlalu besar" name="Projects[funding_target]" id="Projects_funding_target" type="text" />
+                     </div>
+                  </div>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Deadline Campaign
+                     </label>
+                     <div class="input-col col--m8">
+                        <span class="fa fa-calendar"></span>
+                        <input class="form-input form-input--block form-input--50 date-picker deadline__input mobile-hide" data-error="Pilih tanggal yang valid" name="Projects[datepickerExpired]" id="Projects_datepickerExpired" type="text" />
+                     </div>
+                  </div>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Kategori Campaign
+                     </label>
+                     <div class="input-col col--m8">
+                        <select class="form-input form-input--block form-input--50 chosen-select" name="Projects[project_categories_id]" id="Projects_project_categories_id">
+                           <option value="">Pilih kategori yang paling sesuai</option>
+                           <option value="8">Balita &amp; Anak Sakit</option>
+                           <option value="9">Bantuan Medis &amp; Kesehatan</option>
+                           <option value="5">Beasiswa &amp; Pendidikan</option>
+                           <option value="22">Bencana Alam</option>
+                           <option value="26">Birthday Fundraising</option>
+                           <option value="24">Difabel</option>
+                           <option value="41">Family For Family</option>
+                           <option value="21">Hadiah &amp; Apresiasi</option>
+                           <option value="13">Karya Kreatif (Film, Buku, dll)</option>
+                           <option value="20">Kategori Lainnya</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Lokasi Penerima Dana
+                     </label>
+                     <div class="input-col col--m8">
+                        <select class="form-input form-input--block form-input--50 chosen-select" placeholder="Your campaign location" name="Projects[locations_id]" id="Projects_locations_id">
+                           <option value="">Pilih lokasi penerima dana campaign</option>
+                           <option value="7">Kab. Aceh Barat, Aceh</option>
+                           <option value="12">Kab. Aceh Barat Daya, Aceh</option>
+                           <option value="8">Kab. Aceh Besar, Aceh</option>
+                           <option value="16">Kab. Aceh Jaya, Aceh</option>
+                           <option value="3">Kab. Aceh Selatan, Aceh</option>
+                           <option value="2">Kab. Aceh Singkil, Aceh</option>
+                           <option value="11">Kab. Aceh Utara, Aceh</option>
+                           <option value="225">Kota Yogyakarta, Daerah Istimewa Yogyakarta</option>
+                        </select>
+                     </div>
+                  </div>
+                  <hr>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Cover Image
+                     </label>
+                     <div class="col--m8">
+                        <div id="img-container">
+                           <label for="inputImage" class="label-trigger">
+                              <img src="img/logo-upload.png" alt="Picture">
+                              <div class="inputImage__label">Pilih Gambar</div>
+                           </label>
+                        </div>
+                        <div class="img-container hidden">
+                           <img src="#">
+                        </div>
+                        <div class="targetImg"></div>
+                        <textarea rows="2" class="form-input form-input--block input-max-char hidden" id="image64" name="Projects[uploadedImage]"></textarea>
+                        <div class="row" id="actions">
+                           <div class="docs-buttons" data-info="Tekan <b>Crop dan Save</b> untuk memilih gambar">
+                              <div class="grid">
+                                 <div class="col--m8">
+                                    <div class="btn-action-edit hidden">
+                                       <label for="inputImage" type="button" class="btn btn--large btn--pink hidden" style="margin-top:10px;">
+                                       Pilih Gambar Lain
+                                       </label>
+                                    </div>
+                                 </div>
+                                 <div class="col--m4">
+                                    <label class="btn btn-primary btn-upload hidden" for="inputImage" title="Upload image file">
+                                    <input type="file" class="sr-only" id="inputImage" name="file" accept="image/*">
+                                    <span class="fa fa-upload"></span>
+                                    </label>
+                                    <button id="cropCropper" type="button" class="btn btn--blue--crop btn--block hidden small-margin-top" data-method="getCroppedCanvas" data-option="{ &quot;width&quot;: 664, &quot;height&quot;: 357 }">
+                                    Crop dan Save
+                                    </button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <p>
+                           Rekomendasi ukuran: 664px x 357px. Format: PNG / JPG / JPEG
+                        </p>
+                     </div>
+                  </div>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Video (opsional)
+                     </label>
+                     <div class="input-col col--m8">
+                        <div class="form-info">
+                           <span class="form-info--suggest">
+                           Video akan menggantikan cover image di halaman campaign
+                           </span>
+                        </div>
+                        <input maxlength="100" class="form-input form-input--block form-input--75" placeholder="https://www.youtube.com/watch?v=xxxxxxxxxxx" name="Projects[videoUrl]" id="Projects_videoUrl" type="text" /> 
+                     </div>
+                  </div>
+                  <div class="form__row col">
+                     <label for="" class="form-label col--m4">
+                     Deskripsi Projek
+                     </label>
+                     <div class="input-col col--m8">
+                        <div class="form-info">
+                           <span class="form-info--suggest">
+                           Tulis singkat tujuan kamu galang dana serta ajakan untuk donasi
+                           </span>
+                           <span class="form-info--counter" style="float:right;">
+                           <span class="remain-char">0</span>/<span class="max-char">300</span>
+                           </span>
+                        </div>
+                        <textarea rows="2" maxlength="300" class="form-input form-input--block input-max-char" name="Projects[short_description]" id="Projects_short_description"></textarea>
+                     </div>
+                  </div>
+                  <div id="termsCheckCampaigner" class="box">
+                     <input class="active" type="checkbox" checked>
+                     <p>
+                        Saya setuju dengan <a target="_blank" href="/term-and-conditions">Syarat & Ketentuan</a> di Kitadonasi.com, termasuk <a target="_blank" href="/faq">biaya administrasi</a> sebesar 5% dari total donasi online yang terkumpul.
+                     </p>
+                  </div>
+                  <div class="form__row form__row--action col col-s">
+                     <div class="align-right">
+                        <button class="btn btn--blue" type="submit">
+                        Save & Next
+                        </button>
+                     </div>
+                  </div>
+               </fieldset>
+            </form>
+         </div>
+      </main>
+      <!-- end isi konten -->
+      <footer role="contentinfo" class="site-footer no-padding--important">
+         <div class="footer-social-wrapper">
+            <div class="container pos-r">
+               <img class="footer-flat__logo" src="https://assets.kitabisa.com/images/site-logo.png">
+               <div class="pos-a pos-a--r0-t50">
+                  <ul class="footer-social large-margin-right">
+                     <span class="centered-inline">Temukan kami di: </span>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__fb-circle.png" alt=""></a>
+                     </li>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__ig-circle.png" alt=""></a> 
+                     </li>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__twitter-circle.png" alt=""></a> 
+                     </li>
+                     <li class="footer-social__item">
+                        <a target="_blank" class="btn btn-social" href="#"><img src="https://assets.kitabisa.com/images/logo__yt-circle.png" alt=""></a> 
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <script>window.myPrefix = '';</script>
+      <script>
+         var path = {
+                 css:myPrefix+"https://assets.kitabisa.com/css/",
+                 js:myPrefix+"https://assets.kitabisa.com/js/vendor/"
+             };
+      </script>
+      <script src="js/main.min.js"></script>
+   </body>
+</html>
+
