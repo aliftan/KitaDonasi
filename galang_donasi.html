@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html class="no-js" lang="en">
    <meta name="description" content="Situs donasi dan menggalang dana (fundraising) untuk inisiatif, campaign dan program sosial. Mari bergotong royong membangun Indonesia!" />
@@ -59,7 +57,7 @@
          <div class="step-reg-campaign">
          </div>
          <div class="container reg-campaign-box">
-            <form class="form form--big auto-num" id="projects-form" action="tahap_donasi.html" method="post">
+            <form class="form form--big auto-num" id="projects-form" action="detail_projek.html" method="post">
                <br />
                <fieldset>
                   <div class="form__row col">
@@ -212,6 +210,43 @@
                         <textarea rows="2" maxlength="300" class="form-input form-input--block input-max-char" name="Projects[short_description]" id="Projects_short_description"></textarea>
                      </div>
                   </div>
+                  <div class="box align-center box--title box--white box--border-blue large-margin-top">
+                     <span class="text-blue text-18">
+                     <strong>
+                     Selangkah lagi sebelum campaign kamu siap digunakan!
+                     </strong>
+                     </span>
+                  </div>
+                  <div class="zone-half-white align-center large-margin-top base-padding">
+                     <div class="container container--small">
+                        <img class="base-margin-top" src="img/icon-add-phone.png" alt="">
+                        <p class="text-18">
+                           <strong>Nomor Handphone</strong>
+                        </p>
+                        <span id="form-input-editable__info">
+                        Tulis nomor handphone yang bisa dihubungi
+                        </span>                     
+                        <div class="form__row align-left large-margin-top">
+                           <label class="form-label text-14">
+                           Nomor Handphone
+                           </label>
+                           <div class="form-editable " data-info="#form-input-editable__info">
+                              <input maxlength="20" class="form-input form-input--edit form-input--block input-only-number" name="Projects[ownerPhoneNumber]" id="Projects_ownerPhoneNumber" type="text">
+                              <span class="text-blue form-input__edit-btn hidden">
+                              <strong>
+                              Ubah
+                              </strong>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="form__row large-margin-top">
+                           <div class="box box--blue-soft base-padding text-14">
+                              Nomor ini akan digunakan untuk mengirim kode unik setiap kali kamu ingin menyelesaikan donasi.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <br>
                   <div id="termsCheckCampaigner" class="box">
                      <input class="active" type="checkbox" checked>
                      <p>
@@ -220,9 +255,7 @@
                   </div>
                   <div class="form__row form__row--action col col-s">
                      <div class="align-right">
-                        <button class="btn btn--blue" type="submit">
-                        Save & Next
-                        </button>
+                        <button class="btn btn--blue" type="submit">BUAT PROJEK</button>
                      </div>
                   </div>
                </fieldset>
@@ -264,4 +297,3 @@
       <script src="js/main.min.js"></script>
    </body>
 </html>
-
